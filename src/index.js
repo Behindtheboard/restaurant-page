@@ -1,14 +1,10 @@
-const content = document.querySelector('#content');
-const title = document.createElement('h1');
-title.textContent = 'Korean Southern Fried Chicken';
-content.appendChild(title);
+import './style.css';
+import pageInit from './initial-page-load.js';
 
-const p = document.createElement('p');
-p.textContent = 'This is the place where you want Korean Fried Chicken with your gravy and biscuits'
-content.appendChild(p);
+const homeButton = document.querySelector('#home-button');
+const menuButton = document.querySelector('#menu-button');
+const aboutButton = document.querySelector('#about-button');
 
-const backgroundImage = document.createElement('IMG');
-backgroundImage.setAttribute('id', 'background-image');
-backgroundImage.src = "./img/FriedChicken.jpg";
-backgroundImage.alt = "background fried chicken"
-content.appendChild(backgroundImage);
+
+
+document.querySelector('#content').appendChild(main());
