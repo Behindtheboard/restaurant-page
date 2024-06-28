@@ -1,7 +1,7 @@
 import backgroundIMG from './img/FriedChicken.jpg';
 import './style.css';
 
-export default function pageInit() {
+function pageInit() {
     const content = document.querySelector('#content');
     const title = document.createElement('h1');
     title.textContent = 'Korean Southern Fried Chicken';
@@ -20,3 +20,7 @@ export default function pageInit() {
     return content;
 }
 
+export default function homePage() {
+    console.log('nice')
+    document.querySelector('#content').appendChild(pageInit());
+};
