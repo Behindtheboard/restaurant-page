@@ -1,7 +1,6 @@
-import backgroundIMG from './img/FriedChicken.jpg';
 import './style.css';
 
-export default function pageInit() {
+function menu() {
     const content = document.querySelector('#content');
     const title = document.createElement('h1');
     title.textContent = 'Korean Southern Fried Chicken';
@@ -11,12 +10,11 @@ export default function pageInit() {
     p.textContent = 'This is the place where you want Korean Fried Chicken with your gravy and biscuits'
     content.appendChild(p);
 
-    // const backgroundImage = document.createElement('IMG');
-    // backgroundImage.setAttribute('id', 'background-image');
-    // backgroundImage.src = backgroundIMG;
-    // backgroundImage.alt = "background fried chicken"
-    // content.appendChild(backgroundImage);
+    const backgroundImage = document.createElement('IMG');
+    backgroundImage.setAttribute('id', 'background-image');
+    backgroundImage.src = backgroundIMG;
+    backgroundImage.alt = "background fried chicken"
+    content.appendChild(backgroundImage);
 
     return content;
 }
-
