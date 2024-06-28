@@ -1,17 +1,16 @@
 import './style.css';
 import homePage from './initial-page-load.js';
+import menuPage from './menu.js';
 
 const homeButton = document.querySelector('#home-button');
 const menuButton = document.querySelector('#menu-button');
 const aboutButton = document.querySelector('#about-button');
 
+homePage();
+
 homeButton.addEventListener('click', homePage);
 
-menuButton.addEventListener('click', () => {
-    document.querySelector('#content').appendChild(menu());
-});
+menuButton.addEventListener('click', menuPage);
 
-aboutButton.addEventListener('click', () => {
-    document.querySelector('#content').appendChild(about());
-});
+aboutButton.addEventListener('click', aboutPage);
 

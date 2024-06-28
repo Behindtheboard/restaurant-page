@@ -1,20 +1,18 @@
 import './style.css';
 
-function menu() {
+export default function menuPage() {
     const content = document.querySelector('#content');
-    const title = document.createElement('h1');
-    title.textContent = 'Korean Southern Fried Chicken';
-    content.appendChild(title);
-
-    const p = document.createElement('p');
-    p.textContent = 'This is the place where you want Korean Fried Chicken with your gravy and biscuits'
-    content.appendChild(p);
-
-    const backgroundImage = document.createElement('IMG');
-    backgroundImage.setAttribute('id', 'background-image');
-    backgroundImage.src = backgroundIMG;
-    backgroundImage.alt = "background fried chicken"
-    content.appendChild(backgroundImage);
-
-    return content;
+    if (content.querySelector('h2') !== null) {
+        return;
+    } else {
+        const title = document.createElement('h2');
+        const ul = document.createElement('ul');
+        content.innerHTML = '';
+        title.setAttribute('id', 'menu');
+        title.textContent = 'Menu';
+        content.appendChild(title);   
+        ul.textContent = 'Appetizers'
+        content.appendChild(ul);   
+        return content;
+    }
 }
