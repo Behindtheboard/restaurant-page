@@ -5,12 +5,12 @@ export default function menuPage() {
     content.innerHTML = '';
 
     const title = document.createElement('h1');
-    title.setAttribute('id', 'menu-page');
-    title.textContent = 'Menu';
+    title.setAttribute('id', 'about-page');
+    title.textContent = 'About';
     content.appendChild(title);   
     
-    const ul = document.createElement('ul');
-    ul.textContent = 'Appetizers'
-    content.appendChild(ul);   
+    const p = document.createElement('p');
+    p.textContent = 'Korean boy who grew up in the southern state of Georgia'
+    content.appendChild(p);   
     return content;
 }
