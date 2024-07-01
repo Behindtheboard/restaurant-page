@@ -10,7 +10,8 @@ export default function homePage() {
     content.appendChild(title);   
     
     const p = document.createElement('p');
-    p.textContent = 'This is the place where you want Korean Fried Chicken with your gravy and biscuits'
+    p.setAttribute('id', 'home-page-p');
+    p.textContent = "This is the place where you want korean fried chicken\nwith your gravy and biscuits."
     content.appendChild(p);   
     return content;
 }

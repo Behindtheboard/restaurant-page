@@ -10,7 +10,7 @@ export default function menuPage() {
     content.appendChild(title);   
     
     const p = document.createElement('p');
-    p.textContent = 'Korean boy who grew up in the southern state of Georgia'
+    p.textContent = 'Korean boy who grew up in the southern state of Georgia bringing you the best korean fried chicken with a southern twist.'
     content.appendChild(p);   
     return content;
 }
