@@ -181,11 +181,14 @@
 
 body {
     font-size: 16px;
-    display: flex;
     flex-direction: column;
     align-items: center;
     background-image: url('./img/FriedChicken.jpg');
     background-size: 100vw;
+}
+
+body, #content {
+    display: flex;
 }
 
 button {
@@ -193,6 +196,14 @@ button {
     width: 100px;
     background-color: rgb(255, 255, 255, .7);
     border: 0px;
+}
+
+button:hover {
+    background-color: rgb(255, 255, 255);
+}
+
+button:active {
+    background-color: rgb(135, 129, 129);
 }
 
 header {
@@ -207,4 +218,6 @@ h1 {
     background-color: rgb(255, 255, 255, .5);
     height: 90vh;
     width: 60vw;
+    flex-direction: column;
+    align-items: center;
 }
